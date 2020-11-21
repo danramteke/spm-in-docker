@@ -1,7 +1,7 @@
 import Vapor
-import Leaf
 
-public func configure(_ app: Application) throws {
-    app.views.use(.leaf)
-    try routes(app)
+public func configure(_ app: Application) throws {  
+    app.get("") { _ in
+        return "Hello world"
+    }
 }
