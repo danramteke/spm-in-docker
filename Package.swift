@@ -19,8 +19,5 @@ let package = Package(
         .target(name: "App", dependencies: [
             .product(name: "Vapor", package: "vapor"),
         ]),
-        .target(name: "Deps", dependencies: [ 
-            .product(name: "Vapor", package: "vapor"),
-        ]),
     ]
 )
